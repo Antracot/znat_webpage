@@ -1,0 +1,249 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+section
+	width: 100%
+	min-width: 980px
+	overflow: hidden
+	position: relative
+	z-index: 2
+	min-height: 600px
+	height: 100vh
+	background-size: cover!important
+
+section>div
+	max-width: 980px
+	position: relative
+	z-index: 2
+	height: 100%
+	margin: 0 auto
+
+section>div>div
+	width: 100%
+	position: absolute
+	height: 600px
+	top: 50%
+	margin-top: -300px
+
+
+
+// .header
+// 	// background-image:url(../img/bg_sec1.jpg)
+// 	// color:#fff
+
+.header .head
+	height: 120px
+	padding: 6px 0 0
+	position: absolute
+	top: 34px
+	margin-top: 0
+	z-index: 5
+	text-align: center
+
+.header .logo
+	background-image: url(../img/big_logo.png)	
+	width: 106px
+	height: 120px
+	margin-left: 80px
+	float: left
+
+.header .call
+	float: right
+	margin-right: 3px
+	margin-top: 13px
+
+.header .phone
+	float: right
+	font-family:Roboto
+	font-size: 24px
+	margin-bottom: 10px
+	margin-right: 6px
+
+.header .callback
+	width: 150px
+	height: 40px
+	background-color: rgba(0,0,0,0.5)
+	border: 2px solid #2db200
+	display: block
+	clear: both
+	color: #fff
+	font-weight: 600
+	font-size: 15px
+	text-align: center
+	line-height: 34px
+	border-radius: 20px
+	position: relative
+	transition: all .25s
+	margin-left: 36px
+
+.header .head p.desc
+	margin: 0 auto
+	width: 420px
+	text-align: center
+	display: inline-block
+	font-size: 18px
+	padding-top: 31px
+	padding-left: 30px
+
+.header h2
+	display: block
+	width: 980px
+	font-size: 45px
+	font-family: RobotoLight
+	padding-top: 250px
+	line-height: 60px
+	letter-spacing: -1.5px
+
+.header span
+	background-image: url("../img/line.jpg")
+	background-repeat: no-repeat
+	background-position: center bottom
+	background-size: 100%
+	white-space: nowrap
+
+.header span:after
+	display: none
+
+.header .title h2 
+	font-family: Roboto, sans-serif
+	padding-top: 61px
+	padding-left: 22px
+	text-align: center
+	font-size: 49px
+	font-weight: normal
+	letter-spacing: 0px
+	line-height: 125%
+	letter-spacing: -1.7px
+
+.header .title p 
+	padding-top: 90px
+	padding-left: 23px
+	text-align: center
+	font-size: 20px
+	font-weight: normal
+	letter-spacing: -0.7px
+
+.header .title p::after
+	display: none
+
+.header .title_law:before
+	background-image: url("/img/buble_sec1.png")
+	background-repeat: no-repeat
+	margin-left: 315px
+	margin-top: -22px
+	display: block
+	content: " "
+	width: 50px
+	height: 28px
+
+.header .title_law
+	background-color: rgba(0,0,0,0.5)
+	border: 2px solid #2db200
+	border-radius: 100px
+	height: 23%
+	width: 70%
+	margin-top: 25px
+	margin-left: 158px
+
+.header .title_law p
+	font-size: 26px;
+	font-family: RobotoRegular, sans-serif
+	font-weight: normal
+	padding-top: 20px
+	margin-left: -15px
+	line-height: 160%
+	letter-spacing: -0.8px
+
+.header .title u 
+	text-decoration: none
+	color: #2db200
+
+.header .title u::after
+	display: none
+
+.header .title:after
+	background-image: url("/img/down_arrow.png")
+	background-repeat: no-repeat
+	margin-left: 492px
+	margin-top: 30px
+	display: block
+	content: " "
+	width: 18px
+	height: 40px
+
+
+// .fisrt_page
+.fisrt_page .head
+	height: 300px
+	padding: 6px 0 0
+	position: absolute
+	top: 34px
+	margin-top: 0
+	z-index: 5
+	text-align: center
+
+.fisrt_page .head .arrow_sec2
+	background-image: url("/img/arrow_sec2.png")
+	background-repeat: no-repeat
+	width: 112px
+	height: 120px
+	margin-top: 100px
+	margin-left: 230px
+	float: left
+
+.first_page p
+	font-size: 60px;
+	font-family: RobotoRegular, sans-serif
+	font-weight: normal
+	padding-top: 20px
+	margin-left: -15px
+	line-height: 160%
+	letter-spacing: -0.8px
+	
+
+
+			
+
+.dummy
+	width: 100%
+	height: 800px
+	background-image: url("../img/dummy1.jpg")
+	
+	// background-color:#000
+	// background-image: url("../img/bg_sec1.jpg")
+
+	background-repeat: no-repeat
+	position: absolute
+	top: 0
+	left: 15%
+	opacity: 0.5
+
+//ALWAYS END
+@import "media"
